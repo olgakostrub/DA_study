@@ -1,15 +1,162 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
+    <base href="/">
     <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
+    <title>Седона</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+<header>
+    <aside class="menu">
+        <ul>
+            <li>
+                <a href="map">Карта штата</a>
+            </li>
+            <li>
+                <a href="info">Информация</a>
+            </li>
+            <li>
+                <a href="media">Фото и видео</a>
+            </li>
+            <li>
+                <a href="hotels">Гостиницы</a>
+            </li>
+        </ul>
+        <a class="menu-close">
+            <i class="icon-close"></i>
+        </a>
+    </aside>
+    <nav class="top-bar">
+        <a class="menu-toggle">
+            <i class="icon-menu"></i>
+        </a>
+    </nav>
+    <div class="header-welcome"></div>
+    <div class="header-main"></div>
+    <div class="header-quote"></div>
+</header>
 
-    <!-- <script src="js/script.js"></script> -->
+<main>
+    <section>
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <span>Рассмотрим 5 причин, по которым Седона круче чем Гранд-Каньон!</span>
 
-  </body>
+        <article>
+            <div class="abstract">
+                <h2>Настоящий городок</h2>
+                <span>— №1 —</span>
+                <span>Седона не аттракцион для туристов, там течет своя жизнь</span>
+            </div>
+
+            <img src="img/reason_1.jpg">
+
+            <div class="offers">
+                <ul>
+                    <li>
+                        <div><i class="icon-lodging"></i></div>
+                        <div>
+                            <div class="option">
+                                <span>Жилье</span>
+                            </div>
+                            <div class="description">
+                                <span>Рекомендуем пожить в настоящем отеле, все как в кино!</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div><i class="icon-souvenirs"></i></div>
+                        <div>
+                            <div class="option">
+                                <span>Сувениры</span>
+                            </div>
+                            <div class="description">
+                                <span>Не только китайского, н ои местного производства!</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div><i class="icon-food"></i></div>
+                        <div>
+                            <div class="option">
+                                <span>Еда</span>
+                            </div>
+                            <div class="description">
+                                <span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article>
+            <div class="abstract">
+                <h2>Там есть мост дьявола</h2>
+                <span>— №2 —</span>
+                <span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
+            </div>
+            <img src="img/reason_2.jpg">
+        </article>
+
+        <article>
+            <div class="abstract">
+                <h2>Небольшая площадь</h2>
+                <span>— №3 —</span>
+                <span>Все достопримечатльности находятся очень близко</span>
+            </div>
+        </article>
+
+        <article>
+            <div class="abstract">
+                <h2>Красивая дорога</h2>
+                <span>— №4 —</span>
+                <span>Ехать в Седону из Лас-Вегаса совсем не скучно!</span>
+            </div>
+        </article>
+
+        <article>
+            <div class="abstract">
+                <h2>Мало туристов</h2>
+                <span>— №5 —</span>
+                <span>Большинство едет в Гранд-Каньон и толпится там</span>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h2>Заинтересовались?</h2>
+        <span>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+        <button>Найти гостиницу</button>
+        <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=PUxnSeTuG8fWztllGqnvHqNT1hT2qIJi&width=600&height=450"
+             alt="Sedona map"/>
+    </section>
+</main>
+
+<footer>
+    <span class="hashtag">#VISITSEDONA</span>
+
+    <div class="social-wrapper">
+        <ul>
+            <li>
+                <a><i class="icon-twitter"></i></a>
+            </li>
+            <li>
+                <a><i class="icon-facebook"></i></a>
+            </li>
+            <li>
+                <a><i class="icon-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a>
+            <span>Разработано</span>
+            <i class="dev-logo"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
 </html>
