@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+
+    <article class="wrapper">
+      
+      <header class="header">
+        <div class="header__panel">
+          <div class="header__logo"></div>
+          <div class="header__open-nav"></div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">карта штата</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">информация</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">фото и видео</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">гостиницы</a></li>
+          </ul>
+          <div class="nav__close"></div>
+        </nav>
+      </header>
+      
+      <section class="page-title"></section>
+      <section>
+        <p class="h2">оставте свой отзыв</p>
+        <p>помогите нашим отелям стать лучше! оставте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      
+      <section class="feedback-form-wrapper">
+       
+        <form action="" class="feedback-form-main">
+
+          <div class="feedback-form-part">
+            <p class="feedback-form-part__header">представтесь, пожалуйста:</p>
+            <label class="feedback-form-part__label" for="feedback-form-part__first-name">фамилия: <span class="feedback-form-part__reqired">*</span></label>
+            <input class="feedback-form-part__input" id="feedback-form-part__first-name" name="firstname" type="text">
+            <label class="feedback-form-part__label" for="feedback-form-part__last-name">имя: <span class="feedback-form-part__reqired">*</span></label>
+            <input class="feedback-form-part__input" id="feedback-form-part__last-name" name="lastname" type="text">
+            <label class="feedback-form-part__label" for="feedback-form-part__middle-name">отчество: <span class="feedback-form-part__reqired">*</span></label>
+            <input class="feedback-form-part__input" id="feedback-form-part__middle-name" name="middlename" type="text">
+          </div>
+
+          <div class="feedback-form-part">
+            <p class="feedback-form-part__header">ваше общее впечатление:</p>
+            <input type="radio" class="feedback-form-part__radio" id="feedback-form-part__radio-positive" name="impression" checked>
+            <label for="feedback-form-part__radio-positive">скорее положительное</label>
+            <input type="radio" class="feedback-form-part__radio" id="feedback-form-part__radio-positive" name="impression">
+            <label for="feedback-form-part__radio-positive">скорее положительное</label>
+          </div>
+        </form>
+      </section>
+      
+    </article>
+
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
