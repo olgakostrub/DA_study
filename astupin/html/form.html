@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Седона :: Отзыв</title>
+</head>
+<body>
+
+<header>
+    <aside class="menu">
+        <ul>
+            <li>
+                <a href="map">Карта штата</a>
+            </li>
+            <li>
+                <a href="info">Информация</a>
+            </li>
+            <li>
+                <a href="media">Фото и видео</a>
+            </li>
+            <li>
+                <a href="hotels">Гостиницы</a>
+            </li>
+        </ul>
+        <a class="menu-close">
+            <i class="icon-close"></i>
+        </a>
+    </aside>
+    <nav class="top-bar">
+        <a class="menu-toggle">
+            <i class="icon-menu"></i>
+        </a>
+    </nav>
+    <div class="header-main"></div>
+</header>
+
+<main>
+    <section>
+        <h1>Оставьте свой отзыв</h1>
+        <span>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</span>
+
+        <form name="reviewForm">
+            <fieldset>
+                <legend>Представьтесь пожалуйста:</legend>
+                Фамилия: <input type="text" name="surname" placeholder="Иванов" required><br>
+                Имя: <input type="text" name="name" placeholder="Петр" required><br>
+                Отчество: <input type="text" name="middleName" placeholder="Александрович">
+            </fieldset>
+            <fieldset>
+                <legend>Ваше общее впечатление:</legend>
+                <input type="radio" name="impression" value="positive">Скорее положительное<br>
+                <input type="radio" name="impression" value="negative">Скорее отрицательное
+            </fieldset>
+            <fieldset>
+                <legend>Даты вашей поездки:</legend>
+                <input type="date" name="departureDate" required><br>
+                <input type="number" name="stayLength" required><br>
+                <input type="date" name="arrivalDate" required>
+            </fieldset>
+            <fieldset>
+                <legend>Кол-во путешественников:</legend>
+                <input type="number" name="travellersCount" required><br>
+                <ul>
+                    <li>
+                        <div class="traveller-number">
+                            <span>1</span>
+                        </div>
+                        <div class="traveller-info">
+                            <fieldset>
+                                Фамилия: <input type="text" name="surname-1" placeholder="Иванов" required><br>
+                                Имя: <input type="text" name="name-1" placeholder="Петр" required><br>
+                                Отчество: <input type="text" name="middleName-1" placeholder="Александрович">
+                            </fieldset>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="traveller-number">
+                            <span>2</span>
+                        </div>
+                        <div class="traveller-info">
+                            <fieldset>
+                                Фамилия: <input type="text" name="surname-2" placeholder="Иванов" required><br>
+                                Имя: <input type="text" name="name-2" placeholder="Петр" required><br>
+                                Отчество: <input type="text" name="middleName-2" placeholder="Александрович">
+                            </fieldset>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Посещенные достопримечательности:</legend>
+                <input type="checkbox"/>Мост Дьявола<br>
+                <input type="checkbox"/>Слайд-парк<br>
+                <input type="checkbox"/>Гора-Колокол<br>
+                <input type="checkbox"/>Красные скалы<br>
+            </fieldset>
+            <h2>Загрузите фотографии</h2>
+            <button>Выбрать фотографии</button>
+            <ul class="fotos">
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+                <li>
+                    <button><i class="icon-close"></i></button>
+                    <img src="img/fotos/foto_1.jpg" alt="foto">
+                </li>
+            </ul>
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <span class="hashtag">#VISITSEDONA</span>
+
+    <div class="social-wrapper">
+        <ul>
+            <li>
+                <a><i class="icon-twitter"></i></a>
+            </li>
+            <li>
+                <a><i class="icon-facebook"></i></a>
+            </li>
+            <li>
+                <a><i class="icon-youtube"></i></a>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a>
+            <span>Разработано</span>
+            <i class="dev-logo"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
