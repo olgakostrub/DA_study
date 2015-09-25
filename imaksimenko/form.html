@@ -7,167 +7,145 @@
   </head>
   <body>
 
-    <header>
-      <nav>
-        <ul>
-          <li>Карта штата<button class="btn-close"></button></li>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Гостиницы</li>
+    <header class="header">
+      <nav class="upper-navigation">
+        <ul class="upper-navigation__list">
+          <li class="upper-navigation__item">Карта штата<span class="btn-close"></span></li>
+          <li class="upper-navigation__item">Информация</li>
+          <li class="upper-navigation__item">Фото и видео</li>
+          <li class="upper-navigation__item">Гостиницы</li>
         </ul>
       </nav>
-      <div class="header-img">
-        <div class="logo">
-          <span class="logo-welcome"></span>
-          <span class="logo-sedona"></span>
-          <span class="logo-quote"></span>
+      <section class="header__img">
+        <div class="header__logo">
+          <span class="header__logo-welcome"></span>
+          <span class="header__logo-sedona"></span>
+          <span class="header__logo-quote"></span>
         </div>
-      </div>
-      <div class="header-desc">
-        <h1>Оставьте свой отзыв</h1>
-        <p>Помогите нашит отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+      </section>
+      <section class="header__about-sedona">
+        <h1 class="header__desc-header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="header__desc">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+      </section>
     </header>
-    <main>
-      <form name="estimate">
-        <fieldset>
-          <legend></legend>
-          <div class="person">
-            <p>Представьтесь, пожалуйста:</p>
-            <label>
-              <span>Фамилия:</span>
-              <input type="text" name="lastname">
-            </label>
-            <label>
-              <span>Имя:</span>
-              <input type="text" name="firstname">
-            </label>
-            <label>
-              <span>Отчество:</span>
-              <input type="text" name="patronymic">
-            </label>
-          </div>
-          <div class="opinion">
-            <p>Ваше общее впечатление:</p>
-            <label>
-              <input type="radio" name="opinion" value="good" checked><span>Скорее положительное</span>
-            </label>
-            <label>
-              <input type="radio" name="opinion" value="bad"><span>Скорее отрицательное</span>
-            </label>
-          </div>
-          <div class="date">
-            <p>Даты Вашей поездки:</p>
-            <label>
-              <span>Дата приезда:</span>
-              <input type="text" name="arrival">
-            </label>
-            <label>
-              <span>Длительность пребывания:</span>
-              <button class="btn-counter">+</button><span class="days">14 дн.</span><button class="btn-counter">-</button>
-            </label>
-            <label>
-              <span>Дата отъезда:</span>
-              <input type="text" name="departure">
-            </label>
-          </div>
-          <div class="travelers">
-            <p>Кол-во путешественников:</p>
-            <label>
-              <span>Кол-во путешественников:</span>
-              <button class="btn-counter">+</button><span class="days">2 чел.</span><button class="btn-counter">-</button>
-            </label>
-            <div class="group">
-              <div class="traveler">
-                <div class="number">
-                  <label>
-                    <span>№:</span>
-                    <input type="text" name="traveler-number">
-                  </label>
-                </div>
-                <div class="person">
-                  <label>
-                    <span>Фамилия:</span>
-                    <input type="text" name="lastname">
-                  </label>
-                  <label>
-                    <span>Имя:</span>
-                    <input type="text" name="firstname">
-                  </label>
-                  <label>
-                    <span>Отчество:</span>
-                    <input type="text" name="patronymic">
-                  </label>
-                </div>
+
+
+
+
+
+    <main class="response">
+      <form class="response-form" name="response-form">
+        <fieldset class="person">
+          <h2 class="person__head">Представьтесь, пожалуйста:</h2>
+          <label class="person__lastname-label" for="lastname">Фамилия:</label>
+          <input class="person__lastname-input" type="text" name="lastname" id="lastname">
+          <label class="person__firstname-label" for="firstname">Имя:</label>
+          <input class="person__firstname-input" type="text" name="firstname" id="firstname">
+          <label class="person__patronymic-label" for="patronymic">Отчество:</label>
+          <input class="person__patronymic-input" type="text" name="patronymic" id="patronymic">
+        </fieldset>
+        <fieldset class="opinion">
+          <h2 class="opinion__head">Ваше общее впечатление:</h2>
+          <input class="opinion__good-opinion-input" type="radio" name="opinion" value="good" id="good-opinion" checked>
+          <label class="opinion__good-opinion-label" for="good-opinion">Скорее положительное</label>
+          <input class="opinion__bad-opinion-input" type="radio" name="opinion" value="good" id="bad-opinion" checked>
+          <label class="opinion__bad-opinion-label" for="bad-opinion">Скорее отрицательное</label>
+        </fieldset>
+        <fieldset class="date">
+          <h2 class="date__head">Даты Вашей поездки:</h2>
+          <label class="date__arrivalDate-label" for="arrivalDate">Дата приезда:</label>
+          <input class="date__arrivalDate-input" type="date" name="arrivalDate" id="arrivalDate">
+
+          <label for="daysCounter">Длительность пребывания:</label>
+          <article class="counter" id="daysCounter">
+            <button class="btn-counter">+</button><span class="counter__days">14 дн.</span><button class="btn-counter">-</button>
+          </article>
+
+          <label class="date__departureDate-label" for="departureDate">Дата отъезда:</label>
+          <input class="date__departureDate-input" type="date" name="departureDate" id="departureDate">
+        </fieldset>
+        <fieldset class="travelers">
+          <h2 class="travelers__head">Кол-во путешественников:</h2>
+          <label for="travelersCounter">Кол-во путешественников:</label>
+          <article class="counter" id="travelersCounter">
+            <button class="btn-counter">+</button><span class="counter__days">2 чел.</span><button class="btn-counter">-</button>
+          </article>
+
+          <div class="travelers__wrap">
+            <div class="travelers__traveler-person">
+              <div class="travelers__col1">
+                <label class="travelers__number-label" for="traveler-number-1">№:</label>
+                <input class="travelers__number-input" type="text" name="traveler-number" id="traveler-number-1">
               </div>
-              <div class="traveler">
-                <div class="number">
-                  <label>
-                    <span>№:</span>
-                    <input type="text" name="traveler-number">
-                  </label>
-                </div>
-                <div class="person">
-                  <label>
-                    <span>Фамилия:</span>
-                    <input type="text" name="lastname">
-                  </label>
-                  <label>
-                    <span>Имя:</span>
-                    <input type="text" name="firstname">
-                  </label>
-                  <label>
-                    <span>Отчество:</span>
-                    <input type="text" name="patronymic">
-                  </label>
-                </div>
+              <div class="travelers__col2">
+                <label class="travelers__lastname-label" for="traveler-lastname-1">Фамилия:</label>
+                <input class="travelers__lastname-input" type="text" name="traveler-lastname" id="traveler-lastname-1">
+                <label class="travelers__firstname-label" for="traveler-firstname-1">Имя:</label>
+                <input class="travelers__firstname-input" type="text" name="traveler-firstname" id="firstname-lastname-1">
+                <label class="travelers__patronymic-label" for="traveler-patronymic-1">Отчество:</label>
+                <input class="travelers__patronymic-input" type="text" name="traveler-patronymic" id="traveler-patronymic-1">
+              </div>
+            </div>
+            <div class="travelers__traveler-person">
+              <div class="travelers__col1">
+                <label class="travelers__number-label" for="traveler-number-2">№:</label>
+                <input class="travelers__number-input" type="text" name="traveler-number" id="traveler-number-2">
+              </div>
+              <div class="travelers__col2">
+                <label class="travelers__lastname-label" for="traveler-lastname-2">Фамилия:</label>
+                <input class="travelers__lastname-input" type="text" name="traveler-lastname" id="traveler-lastname-2">
+                <label class="travelers__firstname-label" for="traveler-firstname-2">Имя:</label>
+                <input class="travelers__firstname-input" type="text" name="traveler-firstname" id="firstname-lastname-2">
+                <label class="travelers__patronymic-label" for="traveler-patronymic-2">Отчество:</label>
+                <input class="travelers__patronymic-input" type="text" name="traveler-patronymic" id="traveler-patronymic-2">
               </div>
             </div>
           </div>
-          <div class="places">
-            <p>Посещенные достопримечательности:</p>
-            <label>
-              <input type="checkbox" name="place" value="bridge" checked>Мост дьявола
-            </label>
-            <label>
-              <input type="checkbox" name="place" value="park">Слайд-парк
-            </label>
-            <label>
-              <input type="checkbox" name="place" value="mountain" checked>Гора-Колокол
-            </label>
-            <label>
-              <input type="checkbox" name="place" value="rock" checked>Красные скалы
-            </label>
-          </div>
-          <div class="upload-photos">
-            <p>Загрузите фотографии:</p>
-            <label>
-              <button class="btn-grey">Выбрать фотографии</button>
-            </label>
-            <div class="photos">
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-              <div class="photo"><button class="btn-del">x</button></div>
-            </div>
-          </div>
+        </fieldset>
+        <fieldset class="places">
+          <h2 class="places__head">Посещенные достопримечательности:</h2>
           <label>
-            <input type="submit" value="Отправить отзыв" class="btn-submit">
+            <input type="checkbox" name="place" value="bridge" checked>Мост дьявола
+          </label>
+          <label>
+            <input type="checkbox" name="place" value="park">Слайд-парк
+          </label>
+          <label>
+            <input type="checkbox" name="place" value="mountain" checked>Гора-Колокол
+          </label>
+          <label>
+            <input type="checkbox" name="place" value="rock" checked>Красные скалы
           </label>
         </fieldset>
+        <article class="upload-photos">
+          <h2>Загрузите фотографии:</h2>
+          <button class="btn-grey">Выбрать фотографии</button>
+          <section class="photos">
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+            <figure class="photos__item"><button class="btn-del">x</button></figure>
+          </section>
+        </article>
+        <input class="btn-submit" type="submit" value="Отправить отзыв">
       </form>
     </main>
-    <footer>
+
+
+
+
+
+    <footer class="footer">
       <span class="tags">#visitsedona</span>
-      <ul class="social">
-        <li class="social-tw"></li>
-        <li class="social-fb"></li>
-        <li class="social-youtube"></li>
+      <ul class="social-list">
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
       </ul>
-      <div class="dev-by">Разработано <span class="dev-logo"></span></div>
+      <div class="dev-by">Разработано <span class="dev-by__logo"></span></div>
     </footer>
     <!-- <script src="js/script.js"></script> -->
 

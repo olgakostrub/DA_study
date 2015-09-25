@@ -7,103 +7,112 @@
   </head>
   <body>
 
-    <header>
-      <nav>
-        <ul>
-          <li>Карта штата<button class="btn-close"></button></li>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Гостиницы</li>
+    <header class="header">
+      <nav class="upper-navigation">
+        <ul class="upper-navigation__list">
+          <li class="upper-navigation__item">Карта штата<span class="btn-close"></span></li>
+          <li class="upper-navigation__item">Информация</li>
+          <li class="upper-navigation__item">Фото и видео</li>
+          <li class="upper-navigation__item">Гостиницы</li>
         </ul>
       </nav>
-      <div class="header-img">
-        <div class="logo">
-          <span class="logo-welcome"></span>
-          <span class="logo-sedona"></span>
-          <span class="logo-quote"></span>
+      <section class="header__img">
+        <div class="header__logo">
+          <span class="header__logo-welcome"></span>
+          <span class="header__logo-sedona"></span>
+          <span class="header__logo-quote"></span>
         </div>
-      </div>
-      <div class="header-desc">
-        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-      </div>
+      </section>
+      <section class="header__about-sedona">
+        <h1 class="header__desc-header">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="header__desc">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+      </section>
     </header>
-    <main>
-      <div class="benefits">
-        <div class="benefits-head">
-          <h2>Настоящий городок</h2>
-          <p>- №1 -</p>
-          <p>Седона не атракцион для туристов, там течет своя жизнь</p>
-        </div>
-        <div class="benefits-img">
-        </div>
-        <div class="benefits-desc">
-          <ul>
-            <li>
-              <span class="benefits-icon"></span>
-              <h3>Жилье</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+
+
+
+
+
+    <main class="main">
+      <article class="benefit">
+        <header class="benefit-head">
+          <h2 class="benefit-head__header">Настоящий городок</h2>
+          <p class="benefit-head__number">- №1 -</p>
+          <p class="benefit-head__desc">Седона не атракцион для туристов, там течет своя жизнь</p>
+        </header>
+        <figure class="benefit__img"></figure>
+        <section class="benefit__list-wrap">
+          <ul class="benefit-list">
+            <li class="benefit-list__item">
+              <span class="icon-home"></span>
+              <h3 class="benefit-list__header">Жилье</h3>
+              <p class="benefit-list__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
-            <li>
-              <span class="benefits-icon"></span>
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
+            <li class="benefit-desc__item">
+              <span class="icon-gift"></span>
+              <h3 class="benefit-list__header">Сувениры</h3>
+              <p class="benefit-list__desc">Не только китайского, но и местного производства!</p>
             </li>
-            <li>
-              <span class="benefits-icon"></span>
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <li class="benefit-desc__item">
+              <span class="icon-food"></span>
+              <h3 class="benefit-list__header">Еда</h3>
+              <p class="benefit-list__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
-        </div>
-      </div>
-      <div class="benefits">
-        <div class="benefits-head">
-          <h2>Там есть мост дьявола</h2>
-          <p>- №2 -</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-        <div class="benefits-img">
-        </div>
-      </div>
-      <div class="benefits short">
-        <div class="benefits-head">
-          <h2>небольшая площадь</h2>
-          <p>- №3 -</p>
-          <p>Все достопримечательности находятся очень близко</p>
-        </div>
-      </div>
-      <div class="benefits short">
-        <div class="benefits-head">
-          <h2>Красивая дорога</h2>
-          <p>- №4 -</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-      </div>
-      <div class="benefits short">
-        <div class="benefits-head">
-          <h2>Мало туристов</h2>
-          <p>- №5 -</p>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </div>
-      </div>
-      <div class="hotel">
-        <div class="hotel-desc">
-          <p>Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </section>
+      </article>
+
+      <article class="benefit">
+        <header class="benefit-head">
+          <h2 class="benefit-head__header">Там есть мост дьявола</h2>
+          <p class="benefit-head__number">- №2 -</p>
+          <p class="benefit-list__desc">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </header>
+        <figure class="benefit__img"></figure>
+      </article>
+      <article class="benefit benefit--short">
+        <header class="benefit-head">
+          <h2 class="benefit-head__header">небольшая площадь</h2>
+          <p class="benefit-head__number">- №3 -</p>
+          <p class="benefit-list__desc">Все достопримечательности находятся очень близко</p>
+        </header>
+      </article>
+      <article class="benefit benefit--short">
+        <header class="benefit-head">
+          <h2 class="benefit-head__header">Красивая дорога</h2>
+          <p class="benefit-head__number">- №4 -</p>
+          <p class="benefit-list__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </header>
+      </article>
+      <article class="benefit benefit--short">
+        <header class="benefit-head">
+          <h2 class="benefit-head__header">Мало туристов</h2>
+          <p class="benefit-head__number">- №5 -</p>
+          <p class="benefit-list__desc">Большинство едет в Гранд Каньон и толпится там</p>
+        </header>
+      </article>
+      <article class="interested">
+        <div class="interested__wrap">
+          <p class="interested__header">Заинтересовались?</p>
+          <p class="interested__desc">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <button class="btn-blue">Найти гостиницу</button>
-      </div>
+      </article>
       <div class="map"></div>
     </main>
-    <footer>
+
+
+
+
+
+    <footer class="footer">
       <span class="tags">#visitsedona</span>
-      <ul class="social">
-        <li class="social-tw"></li>
-        <li class="social-fb"></li>
-        <li class="social-youtube"></li>
+      <ul class="social-list">
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
+        <li class="social-list__item"></li>
       </ul>
-      <div class="dev-by">Разработано <span class="dev-logo"></span></div>
+      <div class="dev-by">Разработано <span class="dev-by__logo"></span></div>
     </footer>
     <!-- <script src="js/script.js"></script> -->
 
