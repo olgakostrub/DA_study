@@ -7,139 +7,132 @@
 </head>
 <body>
 
-<header class="header">
-  <nav class="menu">
-    <a class="menu__item">Карта штата</a>
-    <a class="menu__item">Информация</a>
-    <a class="menu__item">Фото и видео</a>
-    <a class="menu__item">Гостиницы</a>
-    <span class="menu__close">&times;</span>
+<header class="page-header">
+  <nav class="main-navigation">
+    <ul class="main-navigation__list">
+      <li class="main-navigation__item"><a href="#" class="main-navigation__link">Карта штата</a></li>
+      <li class="main-navigation__item"><a href="" class="main-navigation__link">Информация</a></li>
+      <li class="main-navigation__item"><a href="" class="main-navigation__link">Фото и видео</a></li>
+      <li class="main-navigation__item"><a href="" class="main-navigation__link">Гостиницы</a></li>
+    </ul>
+    <a href="" class="main-navigation__close">&times;</a>
+    <a href="" class="main-navigation__toggle main-navigation__toggle--close"></a>
   </nav>
-  <div class="welcome-screen">
-    <div class="welcome-screen__logo"></div>
-    <div class="welcome-screen__handle"></div>
-    <div class="welcome-screen__image"><img /></div>
-  </div>
+  <figure class="header-logo"><img src="#" alt="logo"/></figure>
+  <figure class="welcome-screen"><img src="#" class="welcome-screen__image"/></figure>
 </header>
 
+<main>
+  <article class="page-container">
+    <header class="page-container__header">
+      <h1 class="page-container__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
 
-<main class="main">
-  <section class="reasons">
-    <div class="reasons-header">
-      <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <div class="page-container__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</div>
+    </header>
 
-      <div class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</div>
+    <section class="reasons-list">
+      <div class="reasons-item">
+        <h2 class="reasons-item__title">Настоящий городок</h2>
 
-    </div>
+        <div class="reasons-item__number">- №1 -</div>
+        <div class="reasons-item__desc">Седона - не аттракцион для туристов, там течет своя жизнь</div>
+        <img src="" alt="" class="reasons-item__image"/>
 
-    <div class="reasons-item">
-      <div class="reasons-item__header"><h1>Настоящий городок</h1></div>
-      <div class="reasons-item__number"><span class="text">- №1 -</span></div>
-      <div class="reasons-item__content"><span
-        class="text">Седона - не аттракцион для туристов, там течет своя жизнь</span></div>
+        <section class="options-list">
+          <div class="options-item">
+            <div class="options-item__image-inner">
+              <img src="#" alt="" class="options-item__image  options-item__image--house"/>
+            </div>
+            <div class="options-item__content-inner">
+              <h3 class="options-item__title">Жилье</h3>
 
-      <div class="reasons-item__image">
-        <img/>
-      </div>
-
-      <div class="reasons-options">
-        <div class="reasons-options-item">
-          <div class="reasons-options-item__image">
-            <div class="img-house"></div>
+              <div class="options-item__desc">Рекомендуем пожить в настоящем отеле, все как в кино!</div>
+            </div>
           </div>
-          <div class="reasons-options-item__title"><h1>Жилье</h1></div>
-          <div class="reasons-options-item__content"><span class="text">Рекомендуем пожить в настоящем отеле, все как в кино!</span>
+          <div class="options-item">
+            <div class="options-item__image-inner">
+              <img src="#" alt="" class="options-item__image  options-item__image--gift"/>
+            </div>
+            <div class="options-item__content-inner">
+              <h3 class="options-item__title">Сувениры</h3>
+
+              <div class="options-item__desc">Не только китайского, но и местного производства!</div>
+            </div>
           </div>
-        </div>
-        <div class="reasons-options-item">
-          <div class="reasons-options-item__image">
-            <div class="img-gift"></div>
+          <div class="options-item">
+            <div class="options-item__image-inner">
+              <img src="#" alt="" class="options-item__image  options-item__image--food"/>
+            </div>
+            <div class="options-item__content-inner">
+              <h3 class="options-item__title">Еда</h3>
+
+              <div class="options-item__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
+            </div>
           </div>
-          <div class="reasons-options-item__title"><h1>Сувениры</h1></div>
-          <div class="reasons-options-item__content"><span class="text">Не только китайского, но и местного производства!</span>
-          </div>
-        </div>
-        <div class="reasons-options-item">
-          <div class="reasons-options-item__image">
-            <div class="img-food"></div>
-          </div>
-          <div class="reasons-options-item__title"><h1>Еда</h1></div>
-          <div class="reasons-options-item__content"><span class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
-          </div>
-        </div>
+        </section>
+
       </div>
 
-    </div>
+      <div class="reasons-item">
+        <h2 class="reasons-item__title">Там есть мост дьявола</h2>
 
-    <div class="reasons-item">
-      <div class="reasons-item__header"><h1>Там есть мост дьявола</h1></div>
-      <div class="reasons-item__number"><span class="text">- №2 -</span></div>
-      <div class="reasons-item__content"><span
-        class="text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</span></div>
-
-      <div class="reasons-item__image">
-        <img/>
+        <div class="reasons-item__number">- №2 -</div>
+        <div class="reasons-item__desc">Да, по нему можно пройти! Если, конечно, вы осмелитесь</div>
+        <img src="#" alt="" class="reasons-item__image"/>
       </div>
-    </div>
 
-    <div class="reasons-item reasons-item-brief">
-      <div class="reasons-item__header"><h1>Небольшая площадь</h1></div>
-      <div class="reasons-item__number"><span class="text">- №3 -</span></div>
-      <div class="reasons-item__content"><span
-        class="text">Все достопримечательности находятся очень близко</span></div>
+      <div class="reasons-item  reasons-item--brief">
+        <h2 class="reasons-item__title">Небольшая площадь</h2>
 
-      <div class="reasons-item__image">
-        <img/>
+        <div class="reasons-item__number">- №3 -</div>
+        <div class="reasons-item__desc">Все достопримечательности находятся очень близко</div>
       </div>
-    </div>
 
-    <div class="reasons-item reasons-item-brief">
-      <div class="reasons-item__header"><h1>Красивая дорога</h1></div>
-      <div class="reasons-item__number"><span class="text">- №4 -</span></div>
-      <div class="reasons-item__content"><span
-        class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</span></div>
+      <div class="reasons-item  reasons-item--brief">
+        <h2 class="reasons-item__title">Красивая дорога</h2>
 
-      <div class="reasons-item__image">
-        <img/>
+        <div class="reasons-item__number">- №4 -</div>
+        <div class="reasons-item__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
       </div>
-    </div>
 
-    <div class="reasons-item reasons-item-brief">
-      <div class="reasons-item__header"><h1>Мало туристов</h1></div>
-      <div class="reasons-item__number"><span class="text">- №5 -</span></div>
-      <div class="reasons-item__content"><span
-        class="text">Большинство едет в Гранд Каньон и толпится там</span></div>
+      <div class="reasons-item  reasons-item--brief">
+        <h2 class="reasons-item__title">Мало туристов</h2>
 
-      <div class="reasons-item__image">
-        <img/>
+        <div class="reasons-item__number">- №5 -</div>
+        <div class="reasons-item__desc">Большинство едет в Гранд Каньон и толпится там</div>
       </div>
-    </div>
 
-    <div class="reasons-footer">
-      <h1>Заинтересовались?</h1>
-      <div class="text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц с Седоне</div>
-      <div class="button-link">
-        <a class="button-link__link">Найти гостиницу</a>
-      </div>
-    </div>
+    </section>
+
+  </article>
+
+  <aside class="booking-hotel">
+    <h1 class="booking-hotel__title">Заинтересовались?</h1>
+
+    <p class="booking-hotel__desc">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц с
+      Седоне
+    </p>
+
+    <a href="#" class="btn">Найти гостиницу</a>
 
     <div class="map"></div>
-
-  </section>
+  </aside>
 
 </main>
 
-<footer class="footer">
+<footer class="page-footer">
   <div class="hash-teg">#VISITSEDONA</div>
   <ul class="social-links">
-    <li class="social-links__item button button_twitter"></li>
-    <li class="social-links__item button button_facebook"></li>
-    <li class="social-links__item button button_youtube"></li>
+    <li class="social-links__item  social-links__item--twitter">Twitter</li>
+    <li class="social-links__item  social-links__item--facebook">Facebook</li>
+    <li class="social-links__item  social-links__item--youtube">Yuotube</li>
   </ul>
-  <div class="copyrights">
+  <section class="copyrights">
     <span class="copyrights__label">Разработано</span>
-    <span class="copyrights__logo"></span>
-  </div>
+
+    <div class="copyrights__logo">logo</div>
+  </section>
 </footer>
+
 </body>
 </html>
