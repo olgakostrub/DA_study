@@ -3,110 +3,138 @@
 <head>
     <base href="/">
     <meta charset="utf-8">
-    <title>Седона :: Блог шерифа</title>
+    <title>Седона :: Блог шерифа :: Внимание! Сбежала моя домашняя анаконда</title>
 </head>
 <body>
 
-<header>
-    <aside class="menu">
-        <ul>
-            <li>
-                <a href="map">Карта штата</a>
+<header class="page-header">
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class="main-nav__item">
+                <a href="">Карта штата</a>
             </li>
-            <li>
-                <a href="info">Информация</a>
+            <li class="main-nav__item">
+                <a href="">Информация</a>
             </li>
-            <li>
-                <a href="media">Фото и видео</a>
+            <li class="main-nav__item">
+                <a href="">Фото и видео</a>
             </li>
-            <li>
-                <a href="hotels">Гостиницы</a>
+            <li class="main-nav__item">
+                <a href="">Гостиницы</a>
             </li>
         </ul>
-        <a class="menu-close">
-            <i class="icon-close"></i>
-        </a>
-    </aside>
-    <nav class="top-bar">
-        <a class="menu-toggle">
-            <i class="icon-menu"></i>
-        </a>
+        <a href="" class="main-nav__toggle"></a>
+        <a class="main-nav__btn-close"></a>
     </nav>
-    <div class="header-main"></div>
+    <div class="page-header__image-main">
+        <img src="">
+    </div>
 </header>
 
-<main>
-    <section>
-        <h1>Блог шерифа</h1>
-        <span>Седона - удивительный город! Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах</span>
+<main class="page-main">
+    <h1 class="page-main__head">Блог шерифа</h1>
 
-        <article>
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>Позавчера</span>
-                </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <span>Происшествия</span>
-                </div>
+    <span class="page-main__abstract">Седона - удивительный город! Горы здесь красного цвета, а местный шериф ведет блог
+        и общается на форумах
+    </span>
+
+    <article class="post">
+        <section class="post__metadata">
+            <div class="post__metadata-publication-date">
+                <time>Позавчера</time>
             </div>
-            <h2>Внимание! Сбежала моя домашняя анаконда</h2>
-            <span class="description">Жители Седоны и гости города, будьте бдительны - сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</span>
+            <div class="post__metadata-category">
+                <a href="">Происшествия</a>
+            </div>
+        </section>
 
-            <h3>Предыстория</h3>
+        <header class="post__header">
+            <h1 class="post__header-head">Внимание! Сбежала моя домашняя анаконда</h1>
+            <span class="post__header-body">Жители Седоны и гости города, будьте бдительны - сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</span>
+        </header>
 
-            <p>В далеком 85-ом я подобрал эту змею на трассе. ее переехал грузовик и она валялась на обочине. Мне стало
+        <section class="post__intro">
+            <h2 class="post__intro-head">Предыстория</h2>
+
+            <p class="post__intro-body">В далеком 85-ом я подобрал эту змею на трассе. ее переехал грузовик и она
+                валялась на обочине. Мне
+                стало
                 жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал тогда: "Если доедет до Седоны
                 живой, так и быть, оставлю ее себе"</p>
+        </section>
 
-            <h3>Пропажа</h3>
+        <section class="post__content">
+            <h2 class="post__content-head">Пропажа</h2>
 
-            <p>Неделю назад я вернулся из Канзаса и не нашел анаконду дома. Обошел все 200 гектаров своего участка, но ее ингде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. Особые приметы змеи:</p>
-            <ul>
-                <li>Длина: 5 метров</li>
-                <li>Масса: 85 кг</li>
-                <li>Окраска: серовато-зелёная</li>
+            <p class="post__content-body">Неделю назад я вернулся из Канзаса и не нашел анаконду дома. Обошел все 200
+                гектаров своего участка,
+                но
+                ее ингде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому
+                отправился на
+                поиски сам. Особые приметы змеи:</p>
+            <ul class="post__content-extra">
+                <li class="post__content-extra-sign">Длина: 5 метров</li>
+                <li class="post__content-extra-sign">Масса: 85 кг</li>
+                <li class="post__content-extra-sign">Окраска: серовато-зелёная</li>
             </ul>
-            <p>Если вы увидите эту змею, сразу <a href="#">звоните 911</a> и бегите со всех ног от нее</p>
+            <p class="post__content__footer">Если вы увидите эту змею, сразу <a href="">звоните 911</a> и бегите со всех
+                ног
+                от нее</p>
+        </section>
 
-            <h3>Предостережение</h3>
+        <section class="post__appendix">
+            <h2 class="post__appendix-head">Предостережение</h2>
 
-            <p>Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. Вот цитата, которая мне очень нравится</p>
-            <blockquote>Самый свирепый из зверей - теперь мы знаем это человек, он убивает даже если не голоден.<cite>Адриано Челентано</cite></blockquote>
-        </article>
+            <p class="post__appendix-body">Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо,
+                хоть и выглядит не очень
+                приятно. Вот цитата, которая мне очень нравится</p>
+            <blockquote class="post__appendix-quote">Самый свирепый из зверей - теперь мы знаем это человек, он убивает
+                даже если не
+                голоден.
+                <cite class="post__appendix-quote-author">Адриано Челентано</cite>
+            </blockquote>
+        </section>
+    </article>
 
-        <div class="navigation">
-            <button>Пред.</button>
-            <button>След.</button>
-            <button>Назад к списку</button>
-        </div>
-    </section>
+    <nav class="second-nav">
+        <button class="second-nav__btn-prev">Пред.</button>
+        <button class="second-nav__btn-next">След.</button>
+        <button class="second-nav__btn-back">Назад к списку</button>
+    </nav>
 </main>
 
-<footer>
+<footer class="page-footer">
     <span class="hashtag">#VISITSEDONA</span>
 
-    <div class="social-wrapper">
-        <ul>
-            <li>
-                <a><i class="icon-twitter"></i></a>
+    <section class="page-footer__social-wrap">
+        <ul class="page-footer__social-list">
+            <li class="page-footer__social-list-item">
+                <a href="">
+                    <img src="">
+                </a>
             </li>
-            <li>
-                <a><i class="icon-facebook"></i></a>
+            <li class="page-footer__social-list-item">
+                <a href="">
+                    <img src="">
+                </a>
             </li>
-            <li>
-                <a><i class="icon-youtube"></i></a>
+            <li class="page-footer__social-list-item">
+                <a href="">
+                    <img src="">
+                </a>
             </li>
         </ul>
-    </div>
+    </section>
 
-    <div>
-        <a>
-            <span>Разработано</span>
-            <i class="dev-logo"></i>
-        </a>
-    </div>
+    <section class="page-footer__dev">
+        <span class="page-footer__dev-head">Разработано</span>
+
+        <div class="page-footer__dev-logo-wrap">
+            <a href="" class="page-footer__dev-logo-link">
+                <img src="" alt="HTML Academy">
+            </a>
+        </div>
+    </section>
 </footer>
 
 </body>
