@@ -1,0 +1,60 @@
+// some styles reset
+html {box-sizing: border-box;}
+*, *:before, *:after { box-sizing: inherit; }
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+a {text-decoration: none;}
+
+.main-wrapper {
+	margin: 0 auto;
+	max-width: 320px;
+	background-color: #ddd;
+}
+.header-nav {
+	position: relative;
+
+	&__item {
+		border-bottom: 1px solid #678fa8;
+		border-top: 1px solid #9ac2db;
+		&:first-child {
+			border-top: none;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+
+	&__link {
+		display:block;
+		font: bold 18px/55px Arial, sans-serif;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: #81b3d2;
+	}
+
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+
+		&:after {
+			content: 'x';
+			color: #fff;
+			font: 23px Arial, sans-serif;
+		}
+	}
+
+}
+.wellcome-section {
+	background-image: url(../img/sedona-front.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 395px;
+
+	&__logo {
+		padding-top: 45px;
+		text-align: center;
+	}
+}
