@@ -1,0 +1,23 @@
+Тренировка БЭМ на главной странице:
+1) .header-navigation - .navigation
+2) .user-block  - .header__user-block
+3) .statistic__item--light CORRECT
+4) .features__item CORRECT
+5) .features__title CORRECT
+6) .features__text CORRECT
+7) .news__title CORRECT
+8) .slider__control.slider__control--right - .slider__control--right
+9) .social-links CORRECT
+
+Тренировка БЭМ на странице блога Барбершопа:
+1) .navigation__item
+2) .navigation__link - header-navigation__item why???
+3) .page-title - .inner-page__title why???
+4) .post-preview CORRECT
+5) .post-preview__date CORRECT
+
+Тренировка БЭМ на странице поста Барбершопа:
+1) .header-logo - .logo
+2) .post__header CORRECT
+3) .post__date CORRECT
+4) .post__list - (should be without any class name)
