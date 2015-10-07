@@ -2,14 +2,133 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <!-- TODO add meta for responsivenes -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>HTML Academy: sedona</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+    <div class="main-wrapper">
 
-    <!-- <script src="js/script.js"></script> -->
+      <header class="page-header">
+
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item"><a class="header-nav__link" href="#">карта штата</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">информация</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">фото и видео</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">гостиницы</a></li>
+          </ul>
+          <div class="header-nav__close"></div>
+
+          <div class="header__panel">
+            <div class="header__logo">test text</div>
+            <div class="header__open-nav"></div>
+          </div>
+
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <section class="title-section">
+          <div class="title-section__logo"><img src="img/front-logo.png" alt="sedona-logo"></div>
+        </section>
+
+        <section class="common-section  common-section--figure">
+          <p class="common-section__header">седона - неболшой городок в аризоне, заслуживающий большего!</p>
+          <p class="common-section__text">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+        </section>
+
+        <section class="common-section  common-section--bg-color  common-section--figure">
+          <p class="common-section__header  common-section__header--invert-color">настоящий городок</p>
+          <p class="common-section__num  common-section__num--invert-color">-№1-</p>
+          <p class="common-section__text  common-section__text--invert-color">седона не атракцион для туристов, там течет своя жизнь</p>
+        </section>
+
+        <section class="sedona-photo-section"></section>
+
+        <section class="common-section">
+          <div class="goods">
+            <div class="goods__icon  goods__icon--house"></div>
+            <div class="goods__description">
+              <p class="goods__title">жилье</p>
+              <p class="goods__text">рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+          </div>
+
+          <div class="goods">
+            <div class="goods__icon  goods__icon--present"></div>
+            <div class="goods__description">
+              <p class="goods__title">сувениры</p>
+              <p class="goods__text">не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+
+          <div class="goods">
+            <div class="goods__icon  goods__icon--food"></div>
+            <div class="goods__description">
+              <p class="goods__title">еда</p>
+              <p class="goods__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="common-section">
+          <p class="common-section__header">там есть мост дьявола</p>
+          <p class="common-section__num">-№2-</p>
+          <p class="common-section__text">да, по нему можно пройти! если конечно вы осмелитесь</p>
+        </section>
+
+        <section class="devils-bridge-section"></section>
+
+        <section class="common-section">
+
+          <div class="sedona-info">
+            <p class="sedona-info__header">небольшая площадь</p>
+            <p class="sedona-info__num">-№3-</p>
+            <p class="sedona-info__text">все достопримечательности находятся очень близко</p>
+          </div>
+
+          <div class="sedona-info">
+            <p class="sedona-info__header">красивая дорога</p>
+            <p class="sedona-info__num">-№4-</p>
+            <p class="sedona-info__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </div>
+
+          <div class="sedona-info">
+            <p class="sedona-info__header">мало туристов</p>
+            <p class="sedona-info__num">-№5-</p>
+            <p class="sedona-info__text">большинстов едет в гранд каньон и толпится там</p>
+          </div>
+
+        </section>
+
+        <section class="common-section">
+          <p class="common-section__header">заинтересовались?</p>
+          <p class="common-section__text">укажите примерные даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <button class="common-section__button">найти гостиницу</button>
+        </section>
+
+        <section class="location-map"></section>
+
+        <section class="contacts">
+          <p class="contacts__heaer">#visitsedona</p>
+          <ul class="contacts__list">
+            <li class="contacts__item"><a href="#" class="contacts__link  contacts__icon-twitter"></a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link  contacts__icon-facebook"></a></li>
+            <li class="contacts__item"><a href="#" class="contacts__link  contacts__icon-youtube"></a></li>
+          </ul>
+
+          <div class="page-footer">
+            <p class="page-footer__text">разработано <i class="page-footer__logo"><img src="" alt=""></i></p>
+          </div>
+
+        </section>
+
+      </main>
+
+    </div> <!-- /main-wrapper -->
 
   </body>
 </html>

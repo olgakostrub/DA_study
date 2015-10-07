@@ -1,0 +1,10 @@
+.title-section {
+	background-image: url(../img/sedona-front.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 395px;
+	&__logo {
+		padding-top: 45px;
+		text-align: center;
+	}
+}
