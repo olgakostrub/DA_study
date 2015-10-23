@@ -6,10 +6,142 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__logo-wrap">
+        <a href="#" class="page-header__logo-link">
+          <img src="img/logo.png"/>
+        </a>
+      </div>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+      <div class="page-header__nav-wrap">
+        <nav class="main-nav">
+          <a href="#" class="main-nav__btn"></a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Карта штата</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Информация</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__info-wrap">
+        <div class="page-header__info-intro"><img src="img/welcome.png" alt="Welcome to the gorgeous"/></div>
+        <div class="page-header__info-title"><img src="img/sedona-text.png" alt="Sedona"/></div>
+        <div class="page-header__info-slogan">Because the Grand Canyon sucks</div>
+      </div>
+    </header>
 
-    <!-- <script src="js/script.js"></script> -->
 
+    <main>
+
+      <div class="page__inner">
+
+        <section class="page__content">
+
+          <header class="page__header">
+          <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        </header>
+
+          <div class="page__body">
+
+          <div class="page__description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</div>
+
+          <div class="speciality-list">
+
+            <div class="speciality__item speciality__item--active">
+              <div class="speciality__header">Настояший гродок</div>
+              <div class="speciality__num"> №1</div>
+              <div class="speciality__descr">Седона не атракцион для туристов, там течет своя жизнь</div>
+              <div class="speciality__image"><img src="img/speciality1.png"/></div>
+            </div>
+
+            <ul class="tips-list">
+              <li class="tips-item">
+                <div class="tips-item__image"><img src="img/home.png"/></div>
+                <div class="tips-item__header">Жильё</div>
+                <div class="tips-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</div>
+              </li>
+              <li class="tips-item">
+                <div class="tips-item__image"><img src="img/gift.png"/></div>
+                <div class="tips-item__header">Сувениры</div>
+                <div class="tips-item__text">Не только китайского, но и местного производства!</div>
+              </li>
+              <li class="tips-item">
+                <div class="tips-item__image"><img src="img/food-burger.png"/></div>
+                <div class="tips-item__header">Еда</div>
+                <div class="tips-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</div>
+              </li>
+            </ul>
+
+            <div class="speciality__item speciality__item--active">
+              <div class="speciality__header">Там есть мост дьявола</div>
+              <div class="speciality__num"> №2</div>
+              <div class="speciality__descr">Да, по нему можно пройти! Если конечно вы осмелитесь</div>
+              <div class="speciality__image"><img src="img/speciality2.png"/></div>
+            </div>
+            <div class="speciality__item">
+              <div class="speciality__header">Небольшая площадь</div>
+              <div class="speciality__num"> №3</div>
+              <div class="speciality__descr">Все достопримечательности находятся очень близко</div>
+              <div class="speciality__image"><img src="img/speciality3.png"/></div>
+            </div>
+            <div class="speciality__item">
+              <div class="speciality__header">Красивая дорога</div>
+              <div class="speciality__num"> №4</div>
+              <div class="speciality__descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+              <div class="speciality__image"><img src="img/speciality4.png"/></div>
+            </div>
+            <div class="speciality__item">
+              <div class="speciality__header">Мало туристов</div>
+              <div class="speciality__num"> №5</div>
+              <div class="speciality__descr">Большинство едет в Гранд Каньон и толпится там</div>
+              <div class="speciality__image"><img src="img/speciality5.png"/></div>
+            </div>
+
+          </div>
+
+        </div>
+
+        </section>
+
+        <section class="hotel-hint">
+          <header class="hotel-hint__header"><h1>Заинтересовались?</h1></header>
+          <div class="hotel-hint__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</div>
+          <div class="hotel-hint__link-wrap"><a href="#" class="hotel-hint__link">Найти гостиницу</a></div>
+        </section>
+
+        <section class="place-map">
+          <div class="place-map__wrapper">
+            <div class="place-map__img"><img src="img/map.png"/></div>
+            <div class="place-map__marker"></div>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+
+        <div class="sedona-tag"><p>#Visit sedona</p></div>
+
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li><a class="social-links__item-tw">Twitter</a></li>
+            <li><a class="social-links__item-fb">Facebook</a></li>
+            <li><a class="social-links__item-yt">Youtube</a></li>
+          </ul>
+        </div>
+
+        <div class="created-by">
+          <p>Разработано</p>
+          <div class="created-by__logo"><img src="img/academy-logo.png"/></div>
+        </div>
+
+      </div>
+
+    </footer>
   </body>
 </html>
