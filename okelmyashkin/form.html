@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <div class="header-menu">
+        <a class="header-menu__close-button header-menu__close-button--open"></a>
+        <ul class="header-menu__menu-list header-menu__menu-list--open">
+            <li class="header-menu__menu-item">
+                <a href="#">Карта штата</a>
+            </li>
+            <li class="header-menu__menu-item">
+                <a href="#">Инфомация</a>
+            </li>
+            <li class="header-menu__menu-item">
+                <a href="#">Фото и видео</a>
+            </li>
+            <li class="header-menu__menu-item">
+                <a href="#">Гостиницы</a>
+            </li>
+        </ul>
+        <div class="header-menu__burger-panel">
+            <a class="header-menu__burger-button" href="#"></a>
+            <div class="header-menu__burger-image" href="#"></div>
+        </div>
+    </div>
+
+    <div class="logo-header">
+        <div class="logo-header__header-image"></div>
+    </div>
+
+<div class="review-form">
+    <article class="review-form__article">
+        <h1 class="review-form__header">Оставьте свой отзыв:</h1>
+
+        <p class="review-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достоприечательностях</p>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Представьтесь, пожалуйста:</h1>
+
+        <div class="text-field">
+            <label class="text-field__label-input" for="last-name">Фамилия: <span class="require-star">*</span></label>
+            <input class="text-field__text-input" id="last-name" type="text"/>
+        </div>
+        <div class="text-field">
+            <label class="text-field__label-input" for="first-name">Имя: <span class="require-star">*</span></label>
+            <input class="text-field__text-input" id="first-name" type="text"/>
+        </div>
+        <div class="text-field">
+            <label class="text-field__label-input" for="middle-name">Отчество</label>
+            <input class="text-field__text-input" id="middle-name" type="text"/>
+        </div>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Ваше общее впечатление:</h1>
+
+        <div class="choose-radio-field">
+            <input class="text-radio" id="positive" type="radio" />
+            <label class="label-radio" for="positive">Скорее положительное</label>
+        </div>
+
+        <div class="choose-radio-field">
+            <input class="text-radio" id="negative" type="radio" />
+            <label class="label-radio" for="negative">Скорее отрицательное</label>
+        </div>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Даты вашей поездки</h1>
+
+        <div class="text-field">
+            <label class="text-field__label-text" for="checkin-date">Дата приезда: <span class="require-star">*</span></label>
+            <input class="text-field__text-input" id="checkin-date" type="text"/>
+        </div>
+
+        <div class="num-counter">
+            <label class="num-counter__label-text" for="review-form__duration">Длительность пребывания: <span class="require-star">*</span></label>
+
+            <div class="num-counter__container">
+                <a class="num-counter__button num-counter__button--minus" href="#"></a>
+
+                <input class="num-counter__date-value" id="review-form__duration" type="radio" />
+
+                <a class="num-counter__button num-counter__button--plus" href="#"></a>
+            </div>
+        </div>
+
+        <div class="text-field">
+            <label class="text-field__label-text" for="checkout-date">Дата отъезда: <span class="require-star">*</span></label>
+            <input class="text-field__text-input" id="checkout-date" type="text" />
+        </div>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Кол-во путешественников:</h1>
+
+        <div class="num-counter">
+            <label class="num-counter__label-text" for="review-form__duration">Количество путешественников: <span class="require-star">*</span></label>
+
+            <div class="num-counter__container">
+                <a class="num-counter__button num-counter__button--minus" href="#"></a>
+
+                <input class="num-counter__date-value" id="review-form__travelers-count" type="radio"/>
+
+                <a class="num-counter__button num-counter__button--plus" href="#"></a>
+            </div>
+        </div>
+
+        <div class="traveler-item">
+            <div class="traveler-item__left-column">
+                <h4 class="review-form__header">№</h4>
+                <span class="traveler-item__num">1</span>
+            </div>
+            <div class="traveler-item__right-column">
+                <div class="text-field">
+                    <label class="text-field__label-input" for="last-name1">Фамилия: <span class="require-star">*</span></label>
+                    <input class="text-field__text-input" id="last-name1" type="text"/>
+                </div>
+                <div class="text-field">
+                    <label class="text-field__label-input" for="first-name1">Имя: <span class="require-star">*</span></label>
+                    <input class="text-field__text-input" id="first-name1" type="text"/>
+                </div>
+                <div class="text-field">
+                    <label class="text-field__label-input" for="middle-name1">Отчество</label>
+                    <input class="text-field__text-input" id="middle-name1" type="text"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="traveler-item">
+            <div class="traveler-item__left-column">
+                <h4 class="review-form__header">№</h4>
+                <span class="traveler-item__num">2</span>
+            </div>
+            <div class="traveler-item__right-column">
+                <div class="text-field">
+                    <label class="text-field__label-input" for="last-name2">Фамилия: <span class="require-star">*</span></label>
+                    <input class="text-field__text-input" id="last-name2" type="text"/>
+                </div>
+                <div class="text-field">
+                    <label class="text-field__label-input" for="first-name2">Имя: <span class="require-star">*</span></label>
+                    <input class="text-field__text-input" id="first-name2" type="text"/>
+                </div>
+                <div class="text-field">
+                    <label class="text-field__label-input" for="middle-name2">Отчество</label>
+                    <input class="text-field__text-input" id="middle-name2" type="text"/>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Посещенные достопримечательности:</h1>
+
+        <div class="check-field">
+            <input class="text-check" id="check_1" type="checkbox" value="1" checked />
+            <label class="label-check" for="check_1">Мост дьявола</label>
+        </div>
+        <div class="check-field">
+            <input class="text-check" id="check_2" type="checkbox" value="2" />
+            <label class="label-check" for="check_2">Слайд-парк</label>
+        </div>
+        <div class="check-field">
+            <input class="text-check" id="check_3" type="checkbox" value="3" checked />
+            <label class="label-check" for="check_3">Гора-Колокол</label>
+        </div>
+        <div class="check-field">
+            <input class="text-check" id="check_4" type="checkbox" value="4" checked />
+            <label class="label-check" for="check_4">Красные скалы</label>
+        </div>
+    </article>
+
+    <article class="review-form__article">
+        <h1 class="review-form__header">Загрузить фотографии:</h1>
+
+        <a class="button" href="#">Выбрать фотографии</a>
+
+        <div class="photo-table">
+            <div class="photo-table__row">
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img/>
+                </div>
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+            </div>
+            <div class="photo-table__row">
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+            </div>
+            <div class="photo-table__row">
+                <div class="photo-table__cell">
+                    <a class="photo-table__delete-button"></a>
+                    <img />
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <a class="button" href="#">Отправить отзыв</a>
+</div>
+
+    <div class="footer-page">
+        <a class="footer-page__hash-tag" href="#"></a>
+
+        <div class="social-links">
+            <a class="social-links__link social-links__link--twitter" href="#">Мы в twitter</a>
+            <a class="social-links__link social-links__link--facebook" href="#">Мы в facebook</a>
+            <a class="social-links__link social-links__link--youtube" href="#">Мы в youtube</a>
+        </div>
+    </div>
+
+    <!-- <script src="js/script.js"></script> -->
+</body>
+</html>
