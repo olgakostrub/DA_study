@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__logo-wrap">
+        <a href="#" class="page-header__logo-link">
+          <img src="img/logo.png"/>
+        </a>
+      </div>
+
+      <div class="page-header__nav-wrap">
+        <nav class="main-nav">
+          <a href="#" class="main-nav__btn"></a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Карта штата</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Информация</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Фото и видео</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="page-header__info-wrap">
+        <div class="page-header__info-title"><img src="img/sedona-text.png" alt="Sedona"/></div>
+      </div>
+    </header>
+
+
+    <main>
+
+      <div class="page__inner">
+
+        <section class="page__content">
+
+          <header class="page__header">
+            <h1>Оставьте свой отзыв</h1>
+          </header>
+
+          <div class="page__body">
+
+            <div class="page__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</div>
+
+            <div class="review-form__wrap">
+
+            <form class="user-form">
+
+              <div class="user-form__line">
+
+                <div class="user-form__line-header">Представьтесь, пожалуйста</div>
+
+                <div class="user-form__line-fields">
+
+                  <div class="visitor-name">
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                       <label for="Surname">Фамилия</label>
+                      </div>
+                      <input class="user-form__field-input" id="Surname" name="Surname" placeholder="Иванов" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Name">Имя</label></div>
+                      <input class="user-form__field-input" id="Name" name="Name" placeholder="Пётр" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Patronymic">Отчество</label>
+                      </div>
+                      <input class="user-form__field-input" id="Patronymic" name="Patronymic" placeholder="Александрович" required/>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="user-form__line">
+                <div class="user-form__line-header">Ваше общее вречатление</div>
+                <div class="user-form__line-fields">
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="radio" value="1" id="Impression-1" name="Impression" checked/>
+                    <div class="user-form__field-label"><label for="Impression-1">Скорее положительное</label></div>
+                  </div>
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="radio" value="0" id="Impression-0" name="Impression"/>
+                    <div class="user-form__field-label"><label for="Impression-0">Скорее отрицательное</label></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-form__line">
+                <div class="user-form__line-header">Даты вашей поездки</div>
+                <div class="user-form__line-fields">
+                  <div class="user-form__field">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="ArrivalDate">Дата приезда</label></div>
+                      <input class="user-form__field-input" type="date" id="ArrivalDate" placeholder="4 июля 2015" name="ArrivalDate" required/>
+                  </div>
+                  <div class="user-form__field">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="StayingDuration">Длительность пребывания</label>
+                    </div>
+                    <div class="count-input">
+                      <span class="count-input__control count-input__control--less">-</span>
+                      <input class="count-input__input-field" id="StayingDuration" name="StayingDuration" placeholder="14" required/>
+                      <span class="count-input__input-unit">дн.</span>
+                      <span class="count-input__control count-input__control--more">+</span>
+                    </div>
+                  </div>
+                  <div class="user-form__field">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="DepartureDate">Дата отъезда</label></div>
+                    <input class="user-form__field-input" type="date" id="DepartureDate" placeholder="28 июля 2015" name="DepartureDate" required/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="user-form__line">
+
+                <div class="user-form__line-header">Кол-во путешественников</div>
+
+                <div class="user-form__line-fields">
+
+                  <div class="user-form__field">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="VisitorsCount">Количество путешественников</label>
+                    </div>
+                    <div class="count-input">
+                      <span class="count-input__control count-input__control--less">-</span>
+                      <input class="count-input__input-field" id="VisitorsCount" name="VisitorsCount" placeholder="2" required/>
+                      <span class="count-input__input-unit">чел.</span>
+                      <span class="count-input__control count-input__control--more">+</span>
+                    </div>
+                  </div>
+
+                  <div class="user-form__field user-form__field--small">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="VisitorNumber1">№</label>
+                    </div>
+                    <input class="user-form__field-input" id="VisitorNumber1" name="VisitorNumber1" placeholder="1" required/>
+                  </div>
+
+                  <div class="visitor-name">
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Surname1">Фамилия</label></div>
+                      <input class="user-form__field-input" id="Surname1" name="Surname1" placeholder="Иванов" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Name1">Имя</label></div>
+                      <input class="user-form__field-input" id="Name1" name="Name1" placeholder="Пётр" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Patronymic1">Отчество</label>
+                      </div>
+                      <input class="user-form__field-input" id="Patronymic1" name="Patronymic1" placeholder="Александрович" required/>
+                  </div>
+
+                  </div>
+
+                  <div class="user-form__field user-form__field--small">
+                    <div class="user-form__field-label user-form__field-label--required">
+                      <label for="VisitorNumber2">№</label>
+                    </div>
+                    <input class="user-form__field-input" id="VisitorNumber2" name="VisitorNumber2" placeholder="2" required/>
+                  </div>
+
+                  <div class="visitor-name">
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Surname2">Фамилия</label></div>
+                      <input class="user-form__field-input" id="Surname2" name="Surname2" placeholder="Иванов" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Name2">Имя</label></div>
+                      <input class="user-form__field-input" id="Name2" name="Name2" placeholder="Пётр" required/>
+                    </div>
+
+                    <div class="user-form__field">
+                      <div class="user-form__field-label user-form__field-label--required">
+                        <label for="Patronymic2">Отчество</label>
+                      </div>
+                      <input class="user-form__field-input" id="Patronymic2" name="Patronymic2" placeholder="Александрович" required/>
+                  </div>
+
+                </div>
+
+                </div>
+
+              </div>
+
+              <div class="user-form__line">
+
+                <div class="user-form__line-header">Посещенные достопримечательности</div>
+
+                <div class="user-form__line-fields">
+
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="checkbox" value="0" id="Places0" name="Places" checked/>
+                    <div class="user-form__field-label"><label for="Places0">Мост дьявола</label></div>
+                  </div>
+
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="checkbox" value="1" id="Places1" name="Places" />
+                    <div class="user-form__field-label"><label for="Places1">Слайд-парк</label></div>
+                  </div>
+
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="checkbox" value="2" id="Places2" name="Places" checked />
+                    <div class="user-form__field-label"><label for="Places2">Гора-Колокол</label></div>
+                  </div>
+
+                  <div class="user-form__field">
+                    <input class="user-form__field-input" type="checkbox" value="3" id="Places3" name="Places" checked />
+                    <div class="user-form__field-label"><label for="Places2">Красные скалы</label></div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="user-form__line">
+
+                <div class="user-form__line-header">Загрузите фотографии</div>
+
+                <div class="user-form__line-fields">
+
+                  <div class="user-form__field">
+                      <a href="#">Выбрать фотографии</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="user-form__submit-wrap">
+
+                <div class="user-form__submit">
+                  <input type="submit" value="Отправить отзыв"/>
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+          </div>
+
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+
+        <div class="sedona-tag"><p>#Visitsedona</p></div>
+
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li><a class="social-links__item-tw">Twitter</a></li>
+            <li><a class="social-links__item-fb">Facebook</a></li>
+            <li><a class="social-links__item-yt">Youtube</a></li>
+          </ul>
+        </div>
+
+        <div class="created-by">
+          <p>Разработано</p>
+          <div class="created-by__logo"><img src="img/academy-logo.png"/></div>
+        </div>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
