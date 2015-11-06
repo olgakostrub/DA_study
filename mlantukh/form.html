@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: sedona</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+
+<header class="header">
+  <nav class="menu">
+    <a class="menu__item">Карта штата</a>
+    <a class="menu__item">Информация</a>
+    <a class="menu__item">Фото и видео</a>
+    <a class="menu__item">Гостиницы</a>
+    <span class="menu__close">&times;</span>
+  </nav>
+  <div class="welcome-screen">
+    <div class="welcome-screen__logo"></div>
+    <div class="welcome-screen__handle"></div>
+    <div class="welcome-screen__image"><img/></div>
+  </div>
+</header>
+
+
+<main class="main">
+  <section class="response form">
+    <div class="response-header">
+      <h1>Оставьте свой отзыв</h1>
+
+      <div class="text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещённых вами
+        достопримечательностях
+      </div>
+    </div>
+    <form>
+      <div class="form-page">
+        <h2>Представьтесь, пожалуйста:</h2>
+
+        <div class="form-group">
+          <label class="form-group__label form-group__label_required">Фамилия:</label>
+          <input class="form-group__input" value="Иванов"/>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label form-group__label_required">Имя:</label>
+          <input class="form-group__input" value="Пётр"/>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Отчество:</label>
+          <input class="form-group__input" value="Александрович"/>
+        </div>
+      </div>
+
+      <div class="form-page">
+        <h2>Ваше общее впечатление:</h2>
+
+        <div class="form-group form-group_checkboxes">
+          <label>
+            <input type="radio" class="form-group__input" value="expression" checked/>
+            Скорее положительное
+          </label>
+          <label>
+            <input type="radio" class="form-group__input" value="expression"/>
+            Скорее отрицательное
+          </label>
+        </div>
+      </div>
+
+      <div class="form-page">
+        <h2>Даты вашей поездки:</h2>
+
+        <div class="form-group">
+          <label class="form-group__label form-group__label_required">Дата приезда:</label>
+          <input class="form-group__input" value="4 июля 2015"/>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label form-group__label_required">Длительность пребывания:</label>
+
+          <div class="numeric-picker">
+            <button class="numeric-picker__button">-</button>
+
+            <input class="numeric-picker__input" value="14"/>
+            <span class="numeric-picker__input-addon">дн.</span>
+
+            <button class="numeric-picker__button"></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label form-group__label-required">Дата отъезда:</label>
+          <input class="form-group__input" value="18 июля 2015"/>
+        </div>
+      </div>
+
+      <div class="form-page">
+        <h2>Кол-во путешественников:</h2>
+
+        <div class="form-group">
+          <label class="form-group__label form-group__label_required">Количество путешественников:</label>
+
+          <div class="numeric-picker">
+            <button class="numeric-picker__button">-</button>
+
+            <input class="numeric-picker__input" value="2"/>
+            <span class="numeric-picker__input-addon">чел.</span>
+
+            <button class="numeric-picker__button"></button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label class="form-group__label">№:</label>
+              <input class="form-group__input" value="1" disabled/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label form-group__label_required">Фамилия:</label>
+              <input class="form-group__input" value="Иванов"/>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label form-group__label_required">Имя:</label>
+              <input class="form-group__input" value="Пётр"/>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label">Отчество:</label>
+              <input class="form-group__input" value="Александрович"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label class="form-group__label">№:</label>
+              <input class="form-group__input" value="2" disabled/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label form-group__label_required">Фамилия:</label>
+              <input class="form-group__input" value="Иванов"/>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label form-group__label_required">Имя:</label>
+              <input class="form-group__input" value="Пётр"/>
+            </div>
+            <div class="form-group">
+              <label class="form-group__label">Отчество:</label>
+              <input class="form-group__input" value="Александрович"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-page">
+        <h2>Посещённые достопримечательности:</h2>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <input type="checkbox" class="form-group__input" checked/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label">Мост Дьявола</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <input type="checkbox" class="form-group__input"/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label">Слайд-парк</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <input type="checkbox" class="form-group__input" checked/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label">Гора-Колокол</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <input type="checkbox" class="form-group__input" checked/>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="form-group">
+              <label class="form-group__label">Красные скалы</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-page">
+        <h2>Загрузите фотографии:</h2>
+
+        <div class="form-group">
+          <label class="form-group__label form-group__label_for-file">Выбрать фотографии</label>
+          <input type="file" class="form-group__input form-group__input_file"/>
+        </div>
+
+        <div class="images-holder">
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+          <div class="images-holder-item">
+            <div class="images-holder-item__content"></div>
+            <span class="glyph-close">&times;</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-link">
+        <a class="button button-link__link">Отправить отзыв</a>
+      </div>
+    </form>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="hash-teg">#VISITSEDONA</div>
+  <ul class="social-links">
+    <li class="social-links__item button button_twitter"></li>
+    <li class="social-links__item button button_facebook"></li>
+    <li class="social-links__item button button_youtube"></li>
+  </ul>
+  <div class="copyrights">
+    <span class="copyrights__label">Разработано</span>
+    <span class="copyrights__logo"></span>
+  </div>
+</footer>
+</body>
+</html>

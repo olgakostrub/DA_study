@@ -1,15 +1,150 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: sedona</title>
+
     <!-- <link rel="stylesheet" href="css/style.css"> -->
-  </head>
-  <body>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+    <header class="header-menu">
+        <a class="header-menu__close-button header-menu__close-button--open"></a>
+        <nav>
+            <ul class="header-menu__list header-menu__list--open">
+                <li class="header-menu__item">
+                    <a href="#">Карта штата</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Инфомация</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Фото и видео</a>
+                </li>
+                <li class="header-menu__item">
+                    <a href="#">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-menu__burger-panel">
+            <a class="header-menu__burger-button" href="#"></a>
+            <div class="header-menu__burger-image" href="#"></div>
+        </div>
+    </header>
 
-    <!-- <script src="js/script.js"></script> -->
+<div class="logo-header">
+    <div class="logo-header__image"></div>
+    <div class="logo-header__content">
+        <p class="logo-header__title">Седона - небольшой городок в аризонеб заслуживающий большего!</p>
+        <p class="logo-header__text">Рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+    </div>
+</div>
 
-  </body>
+<div>
+    <div class="reason">
+        <article class="reason__article reason__article--open">
+            <h3 class="reason__article-header">Настоящий городок</h3>
+            <h4 class="reason__article-number">-№1-</h4>
+            <p class="reason__article-text">Седона не атракцион для туристов, там течет своя жизнь</p>
+        </article>
+        <div class="reason__image">
+            <img />
+        </div>
+        <div class="reason__advantage">
+            <ul class="reason__advantage-list">
+                <li>
+                    <article class="reason__advantage-article">
+                        <h5>Жилье</h5>
+                        <img />
+                        <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="reason__advantage-article">
+                        <h5>Суверниры</h5>
+                        <img />
+                        <p>Не только китайского, но и местного производства!</p>
+                    </article>
+                </li>
+                <li>
+                    <article class="reason__advantage-article">
+                        <h5>Еда</h5>
+                        <img />
+                        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </article>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reason">
+        <article class="reason__article reason__article--open">
+            <h3 class="reason__article-header">Там есть мост дьявола</h3>
+            <h4 class="reason__article-number">-№2-</h4>
+            <p class="reason__article-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </article>
+        <div class="reason__image">
+            <img />
+        </div>
+    </div>
+
+    <div class="reason">
+        <article class="reason__article reason__article--close">
+            <h3 class="reason__article-header">Небольшая площадь</h3>
+            <h4 class="reason__article-number">-№3-</h4>
+            <p class="reason__article-text">Все достопримечательности находятся очень близко</p>
+        </article>
+    </div>
+
+    <div class="reason">
+        <article class="reason__article reason__article--close">
+            <h3 class="reason__article-header">Красивая дорога</h3>
+            <h4 class="reason__article-number">-№4-</h4>
+            <p class="reason__article-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </article>
+    </div>
+
+    <div class="reason">
+        <article class="reason__article reason__article--close">
+            <h3 class="reason__article-header">Мало туристов</h3>
+            <h4 class="reason__article-number">-№5-</h4>
+            <p class="reason__article-text">Большинство едет в гранд каньон и толпится там</p>
+        </article>
+    </div>
+</div>
+
+<div class="map">
+    <div class="map__map-image">
+        <img />
+        <a class="map__map-marker"></a>
+    </div>
+</div>
+
+<article class="hotel-find">
+    <h6 class="hotel-find__header">Заинтересовались?</h6>
+    <p class="hotel-find__text">
+        Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в селоне
+    </p>
+
+    <a class="button" href="#">Найти гостиницу</a>
+</article>
+
+
+<footer class="footer-page">
+    <a class="footer-page__hash-tag" href="#"></a>
+
+    <div class="social-links">
+        <a class="social-links__link social-links__twitter" href="#">Мы в twitter</a>
+        <a class="social-links__link social-links__facebook" href="#">Мы в facebook</a>
+        <a class="social-links__link social-links__youtube" href="#">Мы в youtube</a>
+    </div>
+
+    <div class="footer-page__copyright">
+        <p>Разработано</p>
+        <img/>
+    </div>
+</footer>
+
+<!-- <script src="js/script.js"></script> -->
+</body>
 </html>

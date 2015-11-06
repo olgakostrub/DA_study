@@ -2,12 +2,114 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: sedona</title>
+    <title>Sedona</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+  <header>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list_item"><a href="#">Карта штата</a></li>
+        <li class="menu__list_item"><a href="#">информация</a></li>
+        <li class="menu__list_item"><a href="#">фото и видео</a></li>
+        <li class="menu__list_item"><a href="#">Гостиницы</a></li>
+      </ul>
+      <div class="menu__box">
+        <div class="menu__box_symbol"></div>
+        <span class="menu__box_icon"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+    <div class="b-greet">
+      <img class="b-greet__top" src="" alt="">
+      <img class="b-greet__logo" src="" alt="">
+      <img class="b-greet__bot" src="" alt="">
+    </div>
+    <div class="info">
+      <h2 class="info_title">Седона — небольшой городок в Аризоне,  заслуживающий большего!</h2>
+      <p class="info_desc">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <div class="feature__head">
+          <h3 class="feature__head_title">Настоящий городок</h3>
+          <p class="feature__head_number">№1</p>
+          <p class="feature__head_desc">Седона не атракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="feature__img" src="" alt=""/>
+        <div class="feature__details">
+          <div class="b-item">
+            <h4 class="base-title"><span class="b-item__icon"></span> Жилье</h4>
+            <p class="b-item__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="b-item">
+            <h4 class="base-title"><span class="b-item__icon"></span> Сувениры</h4>
+            <p class="b-item__desc">Не только китайского но и местного производства</p>
+          </div>
+          <div class="b-item">
+            <h4 class="b-item__title"><span class="b-item__icon"></span> Еда</h4>
+            <p class="b-item__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__head">
+          <h3 class="feature__head_title">Там есть мост дьявола</h3>
+          <p class="feature__head_number">№2</p>
+          <p class="feature__head_desc">Да, по нему можно пройти! Если конечно вы осмелитесь!</p>
+        </div>
+        <img class="feature__img" src="" alt=""/>
+      </div>
+      <div class="feature">
+        <div class="feature__head">
+          <h3 class="base-title">Небольшая площадь</h3>
+          <p class="feature__head_number">№3</p>
+          <p class="feature__head_desc">Все достопримечательности находятся очень близко</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__head">
+          <h3 class="base-title">Красивая дорога</h3>
+          <p class="feature__head_number">№4</p>
+          <p class="feature__head_desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__head">
+          <h3 class="base-title">Мало туристов</h3>
+          <p class="feature__head_number">№5</p>
+          <p class="feature__head_desc">Большинство едет в каньон и толпится там</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-hotel">
+      <h3 class="huge-title">Заинтересовались?</h3>
+      <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button type="button" class="base-btn">Найти гостиницу</button>
+      <div class="map"></div>
+    </section>
+
+  </div>
+
+  <footer>
+    <a class="hashtag" href="#">#visitsedona</a>
+      <div class="social_buttons">
+          <a class="social_buttons__btn tw_icon" href="#"></a>
+          <a class="social_buttons__btn fb_icon" href="#"></a>
+          <a class="social_buttons__btn yt_icon" href="#"></a>
+      </div>
+      <div class="copyright">
+        <a class="copyright__title" href="#">
+           <span>Разработано</span>
+           <img src="" class="copyright__logo">
+        </a>
+      </div>
+  </footer>
 
     <!-- <script src="js/script.js"></script> -->
 

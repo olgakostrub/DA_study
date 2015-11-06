@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+
+  <header>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__list_item"><a href="#">Карта штата</a></li>
+        <li class="menu__list_item"><a href="#">информация</a></li>
+        <li class="menu__list_item"><a href="#">фото и видео</a></li>
+        <li class="menu__list_item"><a href="#">Гостиницы</a></li>
+      </ul>
+      <div class="menu__box">
+        <div class="menu__box_symbol"></div>
+        <span class="menu__box_icon"></span>
+      </div>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+    <div class="b-greet">
+      <img class="b-greet__logo" src="" alt="">
+    </div>
+
+    <div class="info">
+      <h2 class="info_title">Оставьте свой отзыв</h2>
+      <p class="info_desc">Помогите нашим отелям стать лучше!</p>
+      <p class="info_desc">Оставьте отзыв о них, а также о посещеннных вами достопримечательностях</p>
+    </div>
+
+    <form action="">
+    <section class="b-questions">
+        <div class="b-name">
+          <h3 class="base-title">Представьтесь, пожалуйста:</h3>
+          <label class="base-label required" for="last">Фамилия</label>
+          <input class="base-input" id="last" type="text"/>
+          <label class="base-label required" for="name">Имя</label>
+          <input class="base-input" id="name" type="text"/>
+          <label class="base-label" for="middle">Отчество</label>
+          <input class="base-input" id="middle" type="text"/>
+        </div>
+
+        <div class="b-impression">
+          <h3 class="base-title">Ваше общее впечатление:</h3>
+          <input type="radio" name="" id="pos"><label for="pos">Скорее положительное</label>
+          <input type="radio" name="" id="neg"><label for="neg">Скорее отрицательное</label>
+        </div>
+
+        <div class="b-date-visit">
+          <h3 class="base-title">Дата вашей поездки:</h3>
+          <label class="base-label required" for="date-start">Дата приезда:</label>
+          <input class="base-input" id="date-start" type="text"/>
+
+          <label class="base-label required" for="duration">Длительность пребывания:</label>
+          <a class="sm-button icon-plus" href="#"></a>
+          <div class="btn-wrap">
+            <input class="base-input" id="duration" type="text"/><span>дн.</span>
+          </div>
+          <a class="sm-button icon-minus" href="#"></a>
+
+          <label class="base-label required" for="date-back">Дата отъезда:</label>
+          <input class="base-input" id="date-back" type="text"/>
+        </div>
+
+        <div class="b-visitors">
+          <h3 class="base-title">Дата вашей поездки:</h3>
+          <label class="base-label required" for="number">Количество путешественников:</label>
+          <a class="sm-button icon-plus" href="#"></a>
+          <div class="">
+            <input class="base-input" id="number" type="text"/><span>чел.</span>
+          </div>
+          <a class="sm-button icon-minus" href="#"></a>
+
+          <div class="b-visitors__item">
+            <div class="numeration">1</div>
+            <label class="base-label required" for="last1">Фамилия</label>
+            <input class="base-input" id="last1" type="text"/>
+            <label class="base-label required" for="name1">Имя</label>
+            <input class="base-input" id="name1" type="text"/>
+            <label class="base-label" for="middle1">Отчество</label>
+            <input class="base-input" id="middle1" type="text"/>
+          </div>
+          <div class="b-visitors__item">
+            <div class="numeration">2</div>
+            <label class="base-label required" for="last2">Фамилия</label>
+            <input class="base-input" id="last2" type="text"/>
+            <label class="base-label required" for="name2">Имя</label>
+            <input class="base-input" id="name2" type="text"/>
+            <label class="base-label" for="middle2">Отчество</label>
+            <input class="base-input" id="middle2" type="text"/>
+          </div>
+        </div>
+
+        <div class="b-sights">
+          <h3 class="base-title">Посещенные достопримечательности:</h3>
+          <input type="checkbox" name="" id="id1"><label for="id1">Мост Дьявола</label>
+          <input type="checkbox" name="" id="id2"><label for="id2">Слайд-парк</label>
+          <input type="checkbox" name="" id="id3"><label for="id3">Гора-Колокол</label>
+          <input type="checkbox" name="" id="id4"><label for="id4">Красные скалы</label>
+        </div>
+    </section>
+
+    <section class="add-photo">
+      <h4 class="base-title">Загрузите фотографии</h4>
+      <button type="button" class="pale-btn">Выбрать фотографии</button>
+      <div class="add-photo__item">
+        <img src="" alt=""/><span class="add-photo__item_delete"></span>
+      </div>
+      <div class="add-photo__item">
+        <img src="" alt=""/><span class="add-photo__item_delete"></span>
+      </div>
+      <div class="add-photo__item">
+        <img src="" alt=""/><span class="add-photo__item_delete"></span>
+      </div>
+      <div class="add-photo__item">
+        <img src="" alt=""/><span class="add-photo__item_delete"></span>
+      </div>
+    </section>
+
+    <button type="button" class="base-btn">Отправить отзыв</button>
+      
+    </form>
+  </div>
+
+  <footer>
+    <a class="hashtag" href="#">#visitsedona</a>
+      <div class="social_buttons">
+          <a class="social_buttons__btn tw_icon" href="#"></a>
+          <a class="social_buttons__btn fb_icon" href="#"></a>
+          <a class="social_buttons__btn yt_icon" href="#"></a>
+      </div>
+  </footer>
+
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
