@@ -1,0 +1,33 @@
+Тренировка БЭМ на главной странице Барбершопа
+1. .navigation
+2. .header__user-block
+3. .statistic__item-light
+4. .features-item
+5. .features-item__title
+6. .features-item__text
+7. .news__title
+8. .slider__control--right
+9. .social-links
+
+Тренировка БЭМ на странице блога Барбершопа
+1. .navigation__item
+2. .navigation__link
+3. .inner-page__title
+4. .post-preview
+5. .post-preview__date
+
+Тренировка БЭМ на странице поста Барбершопа
+1. .logo
+2. .post__header
+3. .post__date
+4. .post__list
+
+Тренировка SMACSS на главной странице Барбершопа
+1. .l-header
+2. .logo
+3. .statistic h1
+4. .features-item
+5. .features-item > h1
+6. .features-item > p
+7. h2
+8. .social-block
