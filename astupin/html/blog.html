@@ -7,178 +7,185 @@
 </head>
 <body>
 
-<header>
-    <aside class="menu">
-        <ul>
-            <li>
-                <a href="map">Карта штата</a>
+<header class="page-header">
+    <nav class="main-nav">
+        <ul class="main-nav__list">
+            <li class="main-nav__item">
+                <a href="">Карта штата</a>
             </li>
-            <li>
-                <a href="info">Информация</a>
+            <li class="main-nav__item">
+                <a href="">Информация</a>
             </li>
-            <li>
-                <a href="media">Фото и видео</a>
+            <li class="main-nav__item">
+                <a href="">Фото и видео</a>
             </li>
-            <li>
-                <a href="hotels">Гостиницы</a>
+            <li class="main-nav__item">
+                <a href="">Гостиницы</a>
             </li>
         </ul>
-        <a class="menu-close">
-            <i class="icon-close"></i>
-        </a>
-    </aside>
-    <nav class="top-bar">
-        <a class="menu-toggle">
-            <i class="icon-menu"></i>
-        </a>
+        <a href="" class="main-nav__toggle"></a>
+        <a class="main-nav__btn-close"></a>
     </nav>
-    <div class="header-main"></div>
+    <div class="page-header__image-main">
+        <img src="">
+    </div>
 </header>
 
-<main>
-    <section>
-        <h1>Блог шерифа</h1>
-        <span>Седона - удивительный город! Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах</span>
+<main class="page-main">
+    <h1 class="page-main__header">Блог шерифа</h1>
+    <span class="page-main__abstract">Седона - удивительный город! Горы здесь красного цвета, а местный шериф ведет блог и общается на форумах</span>
 
-        <article>
-            <h2>Внимание! Сбежала моя домашняя анаконда</h2>
-            <span class="description">Жители Седоны и гости города, будьте бдительны - сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</span>
+    <div class="page-main__post-wrap">
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Внимание! Сбежала моя домашняя анаконда</h2>
+                <span class="post__descr">Жители Седоны и гости города, будьте бдительны - сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.</span>
+            </header>
 
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>Позавчера</span>
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>Позавчера</time>
                 </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a href="category/1">Происшествия</a>
-                </div>
-            </div>
-        </article>
-
-        <article>
-            <h2>Принят антитабачный закон штата</h2>
-            <span class="description">Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено!</span>
-
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>2 дня назад</span>
-                </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a>Законы</a>
+                <div class="post__metadata-category">
+                    <a href="">Происшествия</a>
                 </div>
             </div>
         </article>
 
-        <article>
-            <h2>Маньяк задержан, дает показания</h2>
-            <span class="description">Жители Седоны могут спать спокойно, задержан маньк-эксгибиционист, державший в страхе весь город, пострадавшим обращаться в 911.</span>
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Принят антитабачный закон штата</h2>
+                <span class="post__descr">Уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города Седона категорически запрещено!</span>
+            </header>
 
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>3 дня назад</span>
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>2 дня назад</time>
                 </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a href="category/2">Происшествия</a>
-                </div>
-            </div>
-        </article>
-
-        <article>
-            <h2>Водопад закрыт на реконструкцию</h2>
-            <span class="description">Всем, кто планировал посещать водопад на этих выходных придется изменить планы, на нем ведутся работы по улучшению подаи воды</span>
-
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>Неделю назад</span>
-                </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a href="category/3">Интересное</a>
+                <div class="post__metadata-category">
+                    <a href="">Законы</a>
                 </div>
             </div>
         </article>
 
-        <article>
-            <h2>Открылся новый стейк-хаус "Горный бык"</h2>
-            <span class="description">Лучшие стейки в Аризоне! Приемлемые цены и самые лучшие продукты. Заходите попробовать! Действует акция: сьешь два и получи третий!</span>
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Маньяк задержан, дает показания</h2>
+                <span class="post__descr">Жители Седоны могут спать спокойно, задержан маньк-эксгибиционист, державший в страхе весь город, пострадавшим обращаться в 911.</span>
+            </header>
 
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>Месяц назад</span>
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>3 дня назад</time>
                 </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a href="category/4">Еда</a>
-                </div>
-            </div>
-        </article>
-
-        <article>
-            <h2>Прогноз погоды на ближайшие выходные</h2>
-            <span class="description">Синоптики обещают, что будет ясно, безветренно и около 90 по Фаренгейту. Как в пустыне! Проверим их слова уже через пару дней.</span>
-
-            <div class="info">
-                <div class="publicationDate">
-                    <i class="icon-date"></i>
-                    <span>Год назад</span>
-                </div>
-                <div class="category">
-                    <i class="icon-category"></i>
-                    <a href="category/5">Погода</a>
+                <div class="post__metadata-category">
+                    <a href="">Происшествия</a>
                 </div>
             </div>
         </article>
 
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Водопад закрыт на реконструкцию</h2>
+                <span class="post__descr">Всем, кто планировал посещать водопад на этих выходных придется изменить планы, на нем ведутся работы по улучшению подаи воды</span>
+            </header>
+
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>Неделю назад</time>
+                </div>
+                <div class="post__metadata-category">
+                    <a href="">Интересное</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Открылся новый стейк-хаус &laquo;Горный бык&raquo;</h2>
+                <span class="post__descr">Лучшие стейки в Аризоне! Приемлемые цены и самые лучшие продукты. Заходите попробовать! Действует акция: сьешь два и получи третий!</span>
+            </header>
+
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>Месяц назад</time>
+                </div>
+                <div class="post__metadata-category">
+                    <a href="">Еда</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="post">
+            <header class="post__header">
+                <h2 class="post__head">Прогноз погоды на ближайшие выходные</h2>
+                <span class="post__descr">Синоптики обещают, что будет ясно, безветренно и около 90 по Фаренгейту. Как в пустыне! Проверим их слова уже через пару дней.</span>
+            </header>
+
+            <div class="post__metadata">
+                <div class="post__metadata-publication-date">
+                    <time>Год назад</time>
+                </div>
+                <div class="post__metadata-category">
+                    <a href="">Погода</a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="pagination-wrap">
         <ul class="pagination">
-            <li class="current">
-                <a href="#">1</a>
+            <li class="pagination__page pagination__page-current">
+                <a href="">1</a>
+            </li>
+            <li class="pagination__page">
+                <a href="">2</a>
+            </li>
+            <li class="pagination__page">
+                <a href="">3</a>
+            </li>
+            <li class="pagination__page">
+                <a href="">4</a>
+            </li>
+            <li class="pagination__page">
+                <a href="">5</a>
+            </li>
+        </ul>
+    </div>
+</main>
+
+<footer class="page-footer">
+    <span class="hashtag">#VISITSEDONA</span>
+
+    <section class="page-footer__social-wrap">
+        <ul class="socials">
+            <li>
+                <a class="socials__item-twitter" href="">
+                    <img src="" alt="Мы в Твиттере">
+                </a>
             </li>
             <li>
-                <a href="#">2</a>
+                <a class="socials__item-facebook" href="">
+                    <img src="" alt="Мы на Facebook">
+                </a>
             </li>
             <li>
-                <a href="#">3</a>
-            </li>
-            <li>
-                <a href="#">4</a>
-            </li>
-            <li>
-                <a href="#">5</a>
+                <a class="socials__item-youtube" href="">
+                    <img src="Мы на Youtube">
+                </a>
             </li>
         </ul>
     </section>
-</main>
 
-<footer>
-    <span class="hashtag">#VISITSEDONA</span>
+    <section class="page-footer__dev">
+        <span class="page-footer__dev-heading">Разработано</span>
 
-    <div class="social-wrapper">
-        <ul>
-            <li>
-                <a><i class="icon-twitter"></i></a>
-            </li>
-            <li>
-                <a><i class="icon-facebook"></i></a>
-            </li>
-            <li>
-                <a><i class="icon-youtube"></i></a>
-            </li>
-        </ul>
-    </div>
-
-    <div>
-        <a>
-            <span>Разработано</span>
-            <i class="dev-logo"></i>
-        </a>
-    </div>
+        <div class="page-footer__dev-logo-wrap">
+            <a href="" class="page-footer__dev-logo-link">
+                <img class="page-footer__dev-logo" src="" alt="HTML Academy">
+            </a>
+        </div>
+    </section>
 </footer>
 
 </body>

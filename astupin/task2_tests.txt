@@ -1,0 +1,35 @@
+Тренировка БЭМ на главной странице
+1. .header-navigation
+2. .user-block
+3. .statistic__item--light
+4. .features__item
+5. .features_title
+6. .features_text
+7. .news__title
+8. .slider__control .slider__control--right
+9. .social-links
+
+
+Тренировка БЭМ на странице блога
+1. .navigation__item
+2: .navigation__link
+3. .page-title
+4. .post_preview
+5. .post_preview__date
+
+
+Тренировка БЭМ на странице поста
+1. .header-logo
+2: .post__header
+3: .post__date
+4. .post__list
+
+Тренировка SMACSS на главной странице
+1. header
+2: .logo
+3. .statistic-title
+4. .features-item
+5. .features-item > h1
+6. .features-item > p
+7. .section-title
+8. footer > .social-block
