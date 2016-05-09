@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: sedona</title>
+		<!-- <link rel="stylesheet" href="css/style.css"> -->
+		</head>
+	<body>
+		<header>
+			<nav>
+				<a class="nav-link" href="#">Карта штата</a>
+				<a class="nav-link" href="#">Информация</a>
+				<a class="nav-link" href="#">Фото и видео</a>
+				<a class="nav-link" href="#">Гостиницы</a>
+			</nav>
+		<header>
+		<div class="intro">
+			<div class="top-flyer"></div>
+			<div class="hambuger"></div>
+			<div class="intro-title">Оставьте свой отзыв</div>
+			<div class="intro-text">Помогит нашим отелям стать лучше!</div>
+			<div class="intro-text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
+		</div>
+		<section class="form">
+			<div class="question">
+				<div class="question-title">Представьтесь, пожалуйста:</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="surname">Фамилия:</label>	
+					<input class="text-input" type="text" name="surname" id="surname" value="Иванов"/>
+				</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="firstname">Имя:</label>	
+					<input class="text-input" type="text" name="firstname" id="firstname" value="Петр"/>
+				</div>
+				<div class="form-input">
+					<label class="text-input-label" for="secondname">Отчество:</label>	
+					<input class="text-input" type="text" name="secondname" id="secondname" value="Александрович"/>
+				</div>
+			</div>
+			<div class="question">
+				<div class="question-title">Ваше общее впечатление:</div>
+				<div class="form-input">
+					<label class="radio-input-label" for="impression1">Скорее положительное</label>	
+					<input class="radio-input" type="radio" name="impression" id="impression1" checked value="Скорее положительное"/>
+				</div>
+				<div class="form-input">
+					<label class="radio-input-label" for="impression2">Скорее отрицательное</label>	
+					<input class="radio-input" type="radio" name="impression" id="impression2" value="Скорее отрицательное"/>
+				</div>
+			</div>
+			<div class="question">
+				<div class="question-title">Даты вашей поездки:</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="arrival-date">Дата приезда</label>	
+					<input class="text-input" type="text" name="arrival-date" id="arrival-date" value="4 июля 2015"/>
+				</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="duration">Длительность пребывания</label>
+					<button class="form-minus">-</button>
+					<input class="text-input" type="text" name="duration" id="duration" value="14"/>
+					<div class="duration-unit">дн.</div>
+					<button class="form-plus">+</button>
+				</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="departure-date">Дата отъезда</label>	
+					<input class="text-input" type="text" name="departure-date" id="departure-date" value="25 июля 2015"/>
+				</div>
+			</div>
+			<div class="question">
+				<div class="question-title">Кол-во путешественников:</div>
+				<div class="form-input">
+					<label class="text-input-label required-field" for="quantity">Количествово путешественников</label>
+					<button class="form-minus">-</button>
+					<input class="text-input" type="text" name="quantity" id="quantity" value="2"/>
+					<div class="quantity-unit">чел.</div>
+					<button class="form-plus">+</button>
+				</div>
+				<section class="person">
+					<div class="number-symbol">№</div>
+					<div class="person-number">1</div>
+					<div class="form-input">
+						<label class="text-input-label required-field" for="surname1">Фамилия:</label>	
+						<input class="text-input" type="text" name="surname1" id="surname1" value="Иванов"/>
+					</div>
+					<div class="form-input">
+						<label class="text-input-label required-field" for="firstname1">Имя:</label>	
+						<input class="text-input" type="text" name="firstname1" id="firstname1" value="Пётр"/>
+					</div>
+					<div class="form-input">
+						<label class="text-input-label" for="secondname1">Отчство:</label>	
+						<input class="text-input" type="text" name="secondname1" id="secondname1" value="Александрович"/>
+					</div>
+				</section>
+				<section class="person">
+					<div class="number-symbol">№</div>
+					<div class="person-number">2</div>
+					<div class="form-input">
+						<label class="text-input-label required-field" for="surname2">Фамилия:</label>	
+						<input class="text-input" type="text" name="surname2" id="surname2" value="Иванов"/>
+					</div>
+					<div class="form-input">
+						<label class="text-input-label required-field" for="firstname2">Имя:</label>	
+						<input class="text-input" type="text" name="firstname2" id="firstname2" value="Пётр"/>
+					</div>
+					<div class="form-input">
+						<label class="text-input-label" for="secondname2">Отчство:</label>	
+						<input class="text-input" type="text" name="secondname2" id="secondname2" value="Александрович"/>
+					</div>
+				</section>
+			</div>
+			<div class="question">
+				<div class="question-title">Посещенные достопримечательности:</div>
+				<div class="form-input">
+					<label class="checkbox-input-label" for="sight1">Мост дьявола</label>	
+					<input class="checkbox-input" type="checkbox" name="sight1" id="sight1" checked value="Мост дьявола"/>
+				</div>
+				<div class="form-input">
+					<label class="checkbox-input-label" for="sight2">Слайд-парк</label>	
+					<input class="checkbox-input" type="checkbox" name="sight2" id="sight2" value="Слайд-парк"/>
+				</div>
+				<div class="form-input">
+					<label class="checkbox-input-label" for="sight3">Гора-Колокол</label>	
+					<input class="checkbox-input" type="checkbox" name="sight3" id="sight3" checked value="Гора-Колокол"/>
+				</div>
+				<div class="form-input">
+					<label class="checkbox-input-label" for="sight4">Красные скалы</label>	
+					<input class="checkbox-input" type="checkbox" name="sight4" id="sight4" checked value="Красные скалы"/>
+				</div>
+			</div>
+			<div class="question">
+				<div class="question-title">Загрузите фотографии:</div>
+				<button class="button" id="load-photo">Загрузите фотографии</button>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+				<div class="survey-photo"><div class="survey-photo-cross"></div></div>
+			</div>
+			<button class="button" id="send-survey">Отправьте отзыв</button>
+		</section>	
+			
+		<footer>
+			<div class="title">#VisitSedona</div>
+			<div class="social-butons">
+				<button class="twitter-button"></button>
+				<button class="facebook-button"></button>
+				<button class="youtube-button"></button>
+			</div>
+		<footer>
+<!-- <script src="js/script.js"></script> -->
+	</body>
+</html>
